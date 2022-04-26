@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"
+    <title>Document</title>
+    <style>
+      .body {
+        background-color: #262626;
+      }
+
+      .content-table {
+        position: absolute;
+        top:  50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .content-table thead tr {
+        background-color: #4D4D4D;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+        font-size: large;
+      }
+
+      .content-table th,
+      .content-table td {
+        padding: 15px 10px;
+      }
+
+      .content-table tbody tr {
+        border-bottom: 1px solid;
+      }
+
+      .content-table tbody tr.row {
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+
+        color: #ffffff;
+
+        /* font-weight: bold;
+        color: white; */
+      }
+
+      #sqr {
+        width: 35px;
+        border-radius: 5px;
+        height: 35px;
+        background-color: #4D4D4D;
+      }
+
+      .flex {
+        display : flex 
+      }
+    </style>
+  </head>
+  <body class="body">
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th></th>
+          <th>ITEM NAME</th>
+          <th>QUANTITY</th>
+          <th>AMOUNT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row">
+          <td>1</td>
+          <td><div id="sqr"></div></td>
+          <td class="flex">
+            Macbook Pro
+          </td>
+          <td>
+            10 <br />
+            Pcs
+          </td>
+          <td>
+            NGN 200,000 <br />
+            Nigerian Naira
+          </td>
+        </tr>
+        <tr class="row">
+          <td>2</td>
+          <td><div id="sqr"></div></td>
+          <td class="flex">
+            Item 2
+          </td>
+          <td>
+            1 <br />
+            Pcs
+          </td>
+          <td>
+            NGN 50,000 <br />
+            Nigerian Naira
+          </td>
+        </tr>
+        <tr class="row">
+          <td>3</td>
+          <td><div id="sqr"></div></td>
+          <td class="flex">
+            Item 3
+          </td>
+          <td>
+            2 <br />
+            Pcs
+          </td>
+          <td>
+            NGN 30,000 <br />
+            Nigerian Naira
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
